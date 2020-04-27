@@ -14,14 +14,20 @@ float perp(float m);
 float clamp(float n, float lower, float upper);
 
 // Calculates the hypotenuse of a right triangle.
-float pyth(float a, float b);
+float PythHypo(float SideA, float SideB);
 
-// Calculates a shorter side of a right triangle.
-float pyth_s(float b, float c);
+// Calculates the shorter side of a right triangle.
+float PythSide(float SideB, float Hypotenuse);
 
-// Calculates the missing side of a triangle using the sine rule.
+// Calculates the side opposite angle a in any triangle.
 float SineRuleSide(float AngleA, float SideB, float AngleB);
 
-// Calculates the missing angle of a triangle using the sine ruke.
+// Calculates the angle opposite side a in any triangle.
 float SineRuleAngle(float SideA, float AngleB, float SideB);
+
+// Calculates the side opposite angle c in any triangle.
+float CosineRuleSide(float SideA, float SideB, float AngleC);
+
+// Calculates the angle opposite side c in any triangle.
+float CosineRuleAngle(float SideA, float SideB, float SideC);
 ```
