@@ -33,6 +33,6 @@ namespace um
             float magnitude = std::accumulate(Vectors[i].begin(), Vectors[j].end(), 0);
             value *= 1 / (magnitude)
         }
-        return value;
+        return acos(value);
     }
 }
